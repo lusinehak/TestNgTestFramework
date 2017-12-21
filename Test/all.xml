@@ -1,0 +1,78 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="My suite with tests">
+    <test name="tangent">
+        <classes>
+            <class name="CosTest"/>
+            <class name="CtgTest"/>
+            <class name="DivTest"/>
+            <class name="MultTest"/>
+            <class name="PowTest"/>
+            <class name="SinTest"/>
+            <class name="SubTest"/>
+            <class name="SumTest"/>
+            <class name="TgTest"/>
+        </classes>
+    </test>
+    <test name="isPositive Test1">
+        <parameter name="val" value="0"/>
+        <parameter name="res" value="false"/>
+        <classes>
+            <class name="IsPositiveTest" />
+        </classes>
+    </test>
+    <test name="isPositive Test2">
+        <parameter name="val" value="5"/>
+        <parameter name="res" value="true"/>
+        <classes>
+            <class name="IsPositiveTest" />
+        </classes>
+    </test>
+    <test name="isPositive Test3">
+        <parameter name="val" value="-4"/>
+        <parameter name="res" value="false"/>
+        <classes>
+            <class name="IsPositiveTest" />
+        </classes>
+    </test>
+    <test name="isNegative Test1">
+        <parameter name="val" value="0"/>
+        <parameter name="res" value="false"/>
+        <classes>
+            <class name="IsNegativeTest" />
+        </classes>
+    </test>
+    <test name="isNegative Test2">
+        <parameter name="val" value="5"/>
+        <parameter name="res" value="false"/>
+        <classes>
+            <class name="IsNegativeTest" />
+        </classes>
+    </test>
+    <test name="isNegative Test3">
+        <parameter name="val" value="-4"/>
+        <parameter name="res" value="true"/>
+        <classes>
+            <class name="IsNegativeTest" />
+        </classes>
+    </test>
+    <test name="sqre Test1">
+        <parameter name="val" value="-4"/>
+        <classes>
+            <class name="SqrtTest" />
+        </classes>
+    </test>
+    <test name="sqre Test2">
+        <parameter name="val" value="4"/>
+        <classes>
+            <class name="SqrtTest" />
+        </classes>
+    </test>
+    <test name="sqre Test3">
+        <parameter name="val" value="2.25"/>
+        <classes>
+            <class name="SqrtTest" />
+        </classes>
+    </test>
+
+</suite>

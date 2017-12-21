@@ -1,0 +1,17 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="My suite with tests">
+    <test name="sin/cos operations">
+        <groups>
+            <run>
+                <include name="trigonometric"/>
+                <exclude name="myGroup"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="SinTest"/>
+            <class name="CosTest"/>
+            <class name="CtgTest"/>
+        </classes>
+    </test>
+</suite>
